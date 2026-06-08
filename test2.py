@@ -255,12 +255,12 @@ def statistical_rank(list):
     print(f"Số sinh viên xếp hạng yếu là: {count_weak}")
 
 
-def search_student(students):
+def search_student(list):
     keyword = input("Nhập mã sinh viên hoặc tên cần tìm: ").strip().upper()
     found = False
     print("============= Thông tin sinh viên =============")
     print("=" * 90)
-    for student in students:
+    for student in list:
         if student["student_id"] == keyword:
             found = True
         elif keyword in student["student_name"].upper():
