@@ -119,7 +119,7 @@ def add_student(list):
         "rank": rank,
     }
     list.append(new_student)
-    print(f"Thêm sinh viên {student['student_name']} thành công")
+    print(f"Thêm sinh viên {new_student['student_name']} thành công")
 
 
 def update_student_score(list):
